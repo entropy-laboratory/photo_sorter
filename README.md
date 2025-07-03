@@ -30,49 +30,7 @@ It is ideal for photographers, digital artists, and content creators who wish to
 ## 📁 Folder Structure
 
 ```
-=======
-📸 **Image Sorting and Visual Gradient Classifier**
-This project provides a set of Python scripts for analyzing, categorizing, and sorting image collections based on visual characteristics using machine learning and heuristic rules.
-
-It is ideal for photographers, digital artists, and content creators who wish to bring order to large collections of images by automatically assigning them into visual categories and placing them along a perceptual gradient spectrum.
-
-🔧 **Features**
-✅ Automatic image feature extraction (color histograms, brightness, saturation, entropy, edge density)
-
-✅ Face detection for portrait classification
-
-✅ PCA-based gradient scoring for perceptual image sorting
-
-✅ Heuristic-based category assignment:
-
-Vibrant
-
-Pastel
-
-Monochrome
-
-Dark
-
-Nature
-
-Urban
-
-Portrait
-
-Abstract
-
-Other
-
-✅ Sorted export with filename prefix (position, gradient value, category)
-
-✅ Logging and summary of results
-
-✅ Easily configurable folder paths
-
-📁 **Folder Structure**
 bash
-
-
 project/
 ├── image_sorting_gradient.py     # Main script
 ├── [your images folder]          # Input image folder
