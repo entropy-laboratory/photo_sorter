@@ -30,6 +30,7 @@ It is ideal for photographers, digital artists, and content creators who wish to
 ## 📁 Folder Structure
 
 ```
+bash
 project/
 ├── image_sorting_gradient.py     # Main script
 ├── [your images folder]          # Input image folder
@@ -115,5 +116,77 @@ This project is licensed under the MIT License. Feel free to use, modify, and sh
 
 ## ✨ Author
 
-Developed by ENTRO.PY CODELABS
-If you use this tool in your workflow or project, let me know — I'd love to see how it's helping!
+# If you use this tool in your workflow or project, let me know — I'd love to see how it's helping!
+
+---
+
+## 🧠 How it Works
+
+1. **Feature Extraction**: Each image is resized and analyzed to extract visual features (dominant colors, histograms, entropy, edge density, etc.).
+2. **Categorization**: Images are heuristically assigned to one of several predefined visual categories.
+3. **Gradient Computation**: Principal Component Analysis (PCA) is used to place each image along a single visual axis (gradient).
+4. **Sorting and Export**: Images are renamed and copied in order of increasing gradient value with metadata in filename.
+
+---
+
+## 🚀 Usage
+
+1. Install dependencies (if not already installed):
+
+```bash
+pip install numpy opencv-python scikit-learn matplotlib pandas pillow
+```
+
+2. Adjust folder paths in the script:
+
+```python
+source_folder = r"your\path\to\images"
+destination_folder = r"your\output\path"
+```
+
+3. Run the script:
+
+```bash
+python image_sorting_gradient.py
+```
+
+Sorted images will be available in `sortedNEWMETHOD/gradient/` with gradient-based prefixes.
+
+---
+
+## 📝 Example Filename
+
+```
+023_0.362_04_dark_IMG1234.jpg
+```
+
+- `023`: Position in gradient
+- `0.362`: Gradient score (from 0 to 1)
+- `04_dark`: Assigned category
+- `IMG1234.jpg`: Original filename
+
+---
+
+## 📊 Output Summary
+
+At the end of the run, you'll get:
+
+- A console breakdown of how many images were assigned to each category.
+- A `gradient_info.txt` file listing all scores and assigned labels.
+- A perceptually ordered image collection ready for curation or publishing.
+
+---
+
+## 🧪 Scripts
+
+This project consists of multiple versions:
+
+1. **Basic categorizer** – sorts images into categories using heuristics.
+2. **Gradient sorter** – performs PCA-based sorting using visual features.
+3. **Full version (this script)** – combines categorization + gradient + output.
+
+---
+
+## 🤝 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and share it for personal or commercial use.
