@@ -1,9 +1,9 @@
-📸 Image Sorting and Visual Gradient Classifier
+📸 **Image Sorting and Visual Gradient Classifier**
 This project provides a set of Python scripts for analyzing, categorizing, and sorting image collections based on visual characteristics using machine learning and heuristic rules.
 
 It is ideal for photographers, digital artists, and content creators who wish to bring order to large collections of images by automatically assigning them into visual categories and placing them along a perceptual gradient spectrum.
 
-🔧 Features
+🔧 **Features**
 ✅ Automatic image feature extraction (color histograms, brightness, saturation, entropy, edge density)
 
 ✅ Face detection for portrait classification
@@ -36,17 +36,17 @@ Other
 
 ✅ Easily configurable folder paths
 
-📁 Folder Structure
+📁 **Folder Structure**
 bash
-Kopiuj
-Edytuj
+
 project/
 ├── image_sorting_gradient.py     # Main script
 ├── [your images folder]          # Input image folder
 ├── sortedNEWMETHOD/
 │   ├── gradient/                 # Sorted images with gradient filenames
 │   └── gradient_info.txt         # Detailed output with features and scores
-🧠 How it Works
+
+🧠 **How it Works**
 Feature Extraction: Each image is resized and analyzed to extract visual features (dominant colors, histograms, entropy, edge density, etc.).
 
 Categorization: Images are heuristically assigned to one of several predefined visual categories.
@@ -55,31 +55,25 @@ Gradient Computation: Principal Component Analysis (PCA) is used to place each i
 
 Sorting and Export: Images are renamed and copied in order of increasing gradient value with metadata in filename.
 
-🚀 Usage
+🚀 **Usage**
 Install dependencies (if not already installed):
 
 bash
-Kopiuj
-Edytuj
 pip install numpy opencv-python scikit-learn matplotlib pandas pillow
 Adjust folder paths in the script:
 
 python
-Kopiuj
-Edytuj
 source_folder = r"your\path\to\images"
 destination_folder = r"your\output\path"
 Run the script:
 
 bash
-Kopiuj
-Edytuj
+
 python image_sorting_gradient.py
 Sorted images will be available in sortedNEWMETHOD/gradient/ with gradient-based prefixes.
 
 📝 Example Filename
-Kopiuj
-Edytuj
+
 023_0.362_04_dark_IMG1234.jpg
 023: Position in gradient
 
