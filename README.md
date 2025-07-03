@@ -90,6 +90,7 @@ Sorted images will be available in `sortedNEWMETHOD/gradient/` with gradient-bas
 ## 📊 Output Summary
 
 At the end of the run, you'll get:
+
 - A console breakdown of how many images were assigned to each category.
 - A `gradient_info.txt` file listing all scores and assigned labels.
 - A perceptually ordered image collection ready for curation or publishing.
@@ -99,6 +100,7 @@ At the end of the run, you'll get:
 ## 🧪 Scripts
 
 This project consists of multiple versions:
+
 1. **Basic categorizer** – sorts images into categories using heuristics.
 2. **Gradient sorter** – performs PCA-based sorting using visual features.
 3. **Full version (this script)** – combines categorization + gradient + output.
@@ -113,5 +115,5 @@ This project is licensed under the MIT License. Feel free to use, modify, and sh
 
 ## ✨ Author
 
-Developed with ❤️ by [Your Name]  
+Developed by ENTRO.PY CODELABS
 If you use this tool in your workflow or project, let me know — I'd love to see how it's helping!
